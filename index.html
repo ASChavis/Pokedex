@@ -3,23 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheets" href="style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Pokedex</title>
 </head>
 <body>
     <h1 class ="header">Pokedex</h1>
         <div class="pokemonInfo">
             <div class="column1">
-                <h2 class="pokemonName">Charmander</h2>
-                <img src="style/Pascal (6).png">
-                <p class="pokemonType">Fire</p>
+                <h2 class="pokemonName">004 Charmander</h2>
+                <p class="typeOfPokemon">The Lizard Pokemon</p>
+                <img src="style/Pascal (6).png" class="pokemonImg">
+                <p class="pokemonType">Type: Fire</p>
+                <div class="size">
+                    <p class="height">Height: 2'</p>
+                    <p class="weight">Weight: 18.7 lbs</p>
+                </div>
+                <p class="description">From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame
+                    were to go out.</p>
             </div>
                 <div class="column2">
-                <h2 class="pokemonSelectorList">004 Charmander</h2>        
+                <h2 class="pokemonSelectorList">Found Pokemon</h2> 
+                <div class="tiles">  
+                    <div class="tilesRow1">
+                        <p class="slot1">?</p>
+                        <p class="slot2">?</p>
+                        <p class="slot3">?</p>
+                    </div>
+                    <div class="tilesRow2">
+                        <p class="slot4">?</p>
+                        <p class="slot5">?</p>
+                        <p class="slot6">?</p>
+                    </div>
+                    <div class="tilesRow3">
+                        <p class="slot7">?</p>
+                        <p class="slot8">?</p>
+                        <p class="slot9">?</p>
+                    </div> 
+                </div>   
             </div>
         </div>
 
-
+    <div class="dataSelector">
+        <p class="foundStatement">Enter the name of your found pokemon below to see some of it's stats!</p>
+        <input type="text" placeholder="Enter Pokemon Name" 
+        spellcheck="false">
+        <button>Go!</button>
+    </div>
 
 
 

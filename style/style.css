@@ -1,9 +1,86 @@
-*{
-    display:flex;
-    align-items: center;
-}
-
 body{
+    display: flex;
+    flex-direction: column;
     background-color: black;
+    color:azure;
+    margin:0;
+    text-align: center;
+    justify-content: center;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 50px;
+    margin:space-evenly;
+}
+
+.pokemonInfo {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    width: 100vw;
+}
+
+.column1, .column2{
+    background-color: azure;
+    color:black;
+    width: 30vw;
+    border-radius: 40px;
+    border: solid 20px black;
+    padding:5px;   
+}
+
+.pokemonSelectorList {
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.size{
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+.pokemonImg {
+    height: 200px;
+}
+
+.pokemonType{
+    font-size: 1.5rem;
+}
+
+.description {
+    margin: 30px 20px;
+    font-size:1.5rem;
+}
+
+.tiles {
+    max-width: 30vw;
+    height: 500px;
+}
+
+.tilesRow1, .tilesRow2, .tilesRow3 {
+    display:flex;
+    width: 30vw;
+    height: 18vh;
+    justify-content: space-between;
+}
+
+.slot1, .slot2, .slot3, .slot4, .slot5, .slot6, .slot7, .slot8, .slot9 {
+    display:flex;
+    width: 10vw;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px red;
+    border-radius:20px;
+    margin: 5px;
+}
+
+
+.dataSelector {
+    text-align: center;
+}
