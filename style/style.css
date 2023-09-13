@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: rgb(226, 3, 3);
     border-radius: 50px;
     margin:space-evenly;
 }
@@ -31,7 +31,9 @@ body{
     border-radius: 40px;
     border: solid 20px black;
     padding:5px;   
+    background-color: lightgrey;
 }
+
 
 .pokemonSelectorList {
     overflow-y: auto;
@@ -50,11 +52,19 @@ body{
 
 .pokemonType{
     font-size: 1.5rem;
+    border-top: solid 5px rgb(226, 3, 3);
+    padding-top: 5px;
+    margin-bottom: 0;
 }
 
 .description {
-    margin: 30px 20px;
+    padding: 30px 20px;
     font-size:1.5rem;
+    border:solid 5px black;
+    border-radius: 20px;
+    margin:0;
+    background-color: grey;
+    color:azure;
 }
 
 .tiles {
@@ -75,7 +85,7 @@ body{
     height: 15vh;
     justify-content: center;
     align-items: center;
-    border: solid 5px red;
+    border: solid 5px rgb(226, 3, 3);
     border-radius:20px;
     margin: 5px;
 }
