@@ -35,11 +35,6 @@ body{
 }
 
 
-.pokemonSelectorList {
-    overflow-y: auto;
-    max-height: 500px;
-}
-
 .size{
     display:flex;
     justify-content: space-evenly;
@@ -88,9 +83,36 @@ body{
     border: solid 5px rgb(226, 3, 3);
     border-radius:20px;
     margin: 5px;
+    background-color: rgb(36, 62, 85);
+    color:azure;
+    font-size: 1.5rem;
 }
 
+.pages{
+    display: flex;
+    flex-direction: row;   
+}
 
+button{
+    width: 4vw;
+    border-radius: 30%;
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    
+    flex: 1;
+}
+
+li {
+    margin: 0px 1vw;
+}
 .dataSelector {
     text-align: center;
 }
