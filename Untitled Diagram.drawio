@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2023-09-25T18:35:19.025Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="J8L3KJ7VusgbmgxNOrNt" version="21.6.1" type="github">
+  <diagram name="Page-1" id="fB8CLismexsgfL3C0wWT">
+    <mxGraphModel dx="1114" dy="578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9zOMZ6BrmSjDUXrGajC_-1" value="Pokedex" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zOMZ6BrmSjDUXrGajC_-3" value="Goals&lt;br&gt;&amp;nbsp;&lt;br&gt;-learn how to use draw.io&lt;br&gt;&lt;br&gt;-use node.js and express&lt;br&gt;&lt;br&gt;-Implement an API and database&lt;br&gt;&lt;br&gt;-Pagination&lt;br&gt;&lt;br&gt;-Understand seperation of concerns&lt;br&gt;&lt;br&gt;-Make a cool pokedex" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="15" width="210" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="9zOMZ6BrmSjDUXrGajC_-5" value="Step one: Create HTML and CSS, link rel js files" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="38" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zOMZ6BrmSjDUXrGajC_-6" value="Step two: Create Layout for webpage" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="78" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zOMZ6BrmSjDUXrGajC_-7" value="Step three: Make API generate data to first column using the search bar" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="118" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zOMZ6BrmSjDUXrGajC_-8" value="Step four: Write a function that&amp;nbsp; delivers info to each tile in the second column, base each tile on an individual" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="158" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zOMZ6BrmSjDUXrGajC_-9" value="Step four: Figure out how to paginate the data from the second column" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="198" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zOMZ6BrmSjDUXrGajC_-10" value="Step five:&amp;nbsp; Allow the contents from the poketiles to generate data into column 1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="340" y="238" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zOMZ6BrmSjDUXrGajC_-11" value="Step six: change the apperance of found pokemon" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="415" y="268" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zOMZ6BrmSjDUXrGajC_-12" value="Step seven: figure out how to store found pokemon in a database&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="365" y="298" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zOMZ6BrmSjDUXrGajC_-13" value="Step eight: maybe add a random pokemon generator disguised as a patch of grass?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="325" y="330" width="470" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
