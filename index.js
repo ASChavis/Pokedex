@@ -7,25 +7,38 @@ async function displayPokemon(pokemonName){
 
     const pokeURL ="https://pokeapi.co/api/v2/pokemon/";
 
+    const pokeURL2 ="https://pokeapi.co/api/v2/characteristic/";
+    
     const response = await fetch(pokeURL + pokemonName);
     const data = await response.json();
+    const pokeID= data.id;
+
 
     console.log(data);
+    console.log(pokeID);
+
+    const pokeDescriptionResponse = await fetch(pokeURL2 + pokeID);
+    const pokeDescriptionData = await pokeDescriptionResponse.json();
+
+    console.log(pokeDescriptionData);
 
 
-const pokemonCard = {
-    ".pokemonName": data.name,
-    ".pokemonType": "Type: " + data.types[0].type.name,
-    ".height": "Height: " + data.height + " ft",
-    ".weight": "Weight: " + data.weight + " lbs",
+    const pokemonCard = {
+        ".pokemonName": data.name,
+        ".pokemonType": "Type: " + data.types[0].type.name,
+        ".height": "Height: " + data.height + " ft",
+        ".weight": "Weight: " + data.weight + " lbs",
+        ".description": pokeDescriptionData.descriptions.find(desc => desc.language.name === 'en').description,
+    };
 
-};
 
 for (let className in pokemonCard) {
     document.querySelector(className).innerHTML = pokemonCard[className];
 }
 
+
 };
+
 
 /*
 async function whosThatPokemon(pokemon) {
