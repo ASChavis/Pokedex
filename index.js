@@ -7,28 +7,36 @@ async function displayPokemon(pokemonName){
 
     const pokeURL ="https://pokeapi.co/api/v2/pokemon/";
 
-    const pokeURL2 ="https://pokeapi.co/api/v2/characteristic/";
+    const pokeURL2 ="https://pokeapi.co/api/v2/pokemon-species/";
     
     const response = await fetch(pokeURL + pokemonName);
     const data = await response.json();
-    const pokeID= data.id;
+   //const pokeID= data.flavor_text_entries.flavor_text;
 
 
     console.log(data);
-    console.log(pokeID);
+    //console.log(pokeID);
 
-    const pokeDescriptionResponse = await fetch(pokeURL2 + pokeID);
+    const pokeDescriptionResponse = await fetch(pokeURL2 + data.id);
     const pokeDescriptionData = await pokeDescriptionResponse.json();
 
     console.log(pokeDescriptionData);
 
+    const flavorText = pokeDescriptionData.flavor_text_entries
+        .filter(entry => entry.language.name === 'en' && entry.version.name === 'silver')
+        .map(entry => entry.flavor_text);
+
+    const pokeGenus = pokeDescriptionData.genera
+        .filter(entry => entry.language.name === 'en')
+        .map(entry => entry.genus);
 
     const pokemonCard = {
         ".pokemonName": data.name,
         ".pokemonType": "Type: " + data.types[0].type.name,
         ".height": "Height: " + data.height + " ft",
         ".weight": "Weight: " + data.weight + " lbs",
-        ".description": pokeDescriptionData.descriptions.find(desc => desc.language.name === 'en').description,
+        ".description": flavorText,
+        ".typeOfPokemon": pokeGenus,
     };
 
 
@@ -36,7 +44,7 @@ for (let className in pokemonCard) {
     document.querySelector(className).innerHTML = pokemonCard[className];
 }
 
-
+document.querySelector(".pokemonImg").src = data.sprites.front_default;
 };
 
 
